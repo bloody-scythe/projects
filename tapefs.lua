@@ -34,6 +34,6 @@ function write_fdb(fdb, previous_size)
     tape.write(tostring(size))
     tape.write(string.rep('\0', 8 - #tostring(size)))
     tape.write(tostring(fdb))
-    a = test
+    tape.write(string.rep('\0', fdb_size - tape.getPosition()))
 end
 
