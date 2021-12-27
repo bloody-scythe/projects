@@ -1,4 +1,5 @@
 serial = require('serialization')
+component = require('component')
 
 tape = component.tape_drive
 fdb_size = 204800
